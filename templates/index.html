@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #f0f8ff, #d1e0ff);
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+            border-top: 5px solid #ff6347;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        h1 {
+            margin: 0;
+            color: #ff6347;
+            font-size: 3rem;
+            font-weight: 700;
+            animation: bounceIn 1s ease-in-out;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            50% { transform: scale(1.1); opacity: 0.5; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .description {
+            margin-top: 1rem;
+            font-size: 1.25rem;
+            color: #666;
+        }
+
+        .btn {
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #ff6347, #ff4500);
+            color: white;
+            font-size: 1rem;
+            font-weight: 500;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #ff4500, #ff6347);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOME TO MY HOME PAGE</h1>
+        <p class="description">This is your space to explore, learn, and grow. Dive into the content and enjoy your stay!</p>
+        <button class="btn">Get Started</button>
+    </div>
+</body>
+</html>
